@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Aralia - Latest Updates</title>
+    <link rel="stylesheet" href="build/tailwind.css">
+    <link rel="stylesheet" href="/build/breakpoint.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-----------------------------------------------Nav bar-------------------------->
+    <nav class="bg-blue-900 xl:w-screen h-full flex justify-between">
+        <div class="flex items-center">
+            <img src="img/logo.png" class="h-12 md:h-16 w-auto px-2 md:px-6" alt="The Aralia">
+            <p class="flex items-center border-l-2 pl-2 font-bold text-white h-10 text-sm md:text-base">Real Estate Tagline</p>
+        </div>
+        <div class="space-x-4 hidden pro:hidden py-4 px-10 xl:block">
+            <a href="index.html" class="uppercase font-semibold text-white hover:text-yellow-400 focus:outline-none">home</a>
+            <a href="aboutus.html" class="uppercase font-semibold text-white hover:text-yellow-400 focus:outline-none">about us</a>
+            <a href="properties.html" class="uppercase font-semibold text-white hover:text-yellow-400 focus:outline-none">properties</a>
+            <a class="uppercase font-semibold text-yellow-400 hover:text-yellow-400 focus:outline-none">latest updates</a>
+        </div>
+        <div class="flex block pro:block items-center p-4 xl:hidden">
+            <button type="button" class="text-white text-xl text-white focus:outline-none" onclick="toggleElem('sm_navi')">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+        </div>
+    </nav>
+    <nav id="sm_navi" class="hidden absolute z-50 inset-0 p-2">
+        <div class="bg-blue-900 flex flex-col w-full rounded-xl shadow-xl">
+            <div class="flex flex-row items-center justify-between w-full">
+                <img src="img/logo.png" class="h-12 md:h-16 w-auto px-2 md:px-6" alt="The Aralia">
+                <button class="text-white text-xl focus:text-blue-900 active:text-blue-900" onclick="toggleElem('sm_navi')">
+                    <i class="fa fa-times-circle"></i>
+                </button>
+            </div>
+            <div class="flex flex-col items-center justify-center w-full p-2 space-y-2 border-t-2 border-b-2 border-gray-300 border-solid">
+                <a href="index.html" class="uppercase text-sm text-white focus:text-yellow-400 active:text-yellow-400 focus:outline-none">home</a>
+                <a href="aboutus.html" class="uppercase text-sm text-white focus:text-yellow-400 active:text-yellow-400 focus:outline-none">about us</a>
+                <a href="properties.html" class="uppercase text-sm text-white focus:text-yellow-400 active:text-yellow-400 focus:outline-none">properties</a>
+                <a class="uppercase text-sm text-yellow-400 focus:text-yellow-400 active:text-yellow-400 focus:outline-none">latest updates</a>
+            </div>
+        </div>
+    </nav>
+    <div class="flex flex-row p-6">
+        <div class="w-1/2">
+            <div class="p-2">
+                <img src="img/latest/blog1.jpg" class="w-auto" alt="Blog 1">
+                <p>August 30, 2021</p>
+                <p>Southwoods City BLOG, NEWS AND UPDATES</p>
+                <p>12 Reasons why you should invest in Real Estate</p>
+            </div>
+            <div class="p-2 w-3/4">
+                <img src="img/latest/blog2.jpg" alt="Blog 1">
+                <p>BLOG</p>
+            <p class="mt-6">August 31, 2021</p>
+            <p class="uppercase">Real Estate</p>
+            <p>12345678890 QWERTYUIOP</p>
+            </div>
+        </div>
+        <div class="p-2 w-1/2">
+            <img src="img/latest/blog3.jpg" class="h-3/4" alt="Blog 1">
+            <p>BLOG</p>
+            <p class="mt-6">September 2, 2021</p>
+            <p class="uppercase">Real Estate</p>
+            <p>Real Estate Bootstrap 4 Templatethe best theme for elit, sed do to eiumod tempor dolor sit amet, ctetur adipiscing elit sed do.</p>
+        </div>
+        
+    </div>
+    <script>
+        function toggleElem(paramID)
+            {
+                document.getElementById(paramID).classList.toggle('hidden');
+                document.getElementById(paramID).classList.toggle('block');
+            }
+    </script>
+</body>
+</html>

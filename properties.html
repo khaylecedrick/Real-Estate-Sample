@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Aralia - Properties</title>
+    <link rel="stylesheet" href="build/tailwind.css">
+    <link rel="stylesheet" href="/build/breakpoint.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-----------------------------------------------Nav bar-------------------------->
+    <nav class="bg-blue-900 xl:w-screen h-full flex justify-between">
+        <div class="flex items-center">
+            <img src="img/logo.png" class="h-12 md:h-16 w-auto px-2 md:px-6" alt="The Aralia">
+            <p class="flex items-center border-l-2 pl-2 font-bold text-white h-10 text-sm md:text-base">Real Estate Tagline</p>
+        </div>
+        <div class="space-x-4 hidden pro:hidden py-4 px-10 xl:block">
+            <a href="index.html" class="uppercase text-md font-semibold text-white hover:text-yellow-400 focus:outline-none">home</a>
+            <a href="aboutus.html" class="uppercase text-md font-semibold text-white hover:text-yellow-400 focus:outline-none">about us</a>
+            <a class="uppercase text-md font-semibold text-yellow-400 hover:text-yellow-400 focus:outline-none">properties</a>
+            <a href="latest.html" class="uppercase text-md font-semibold text-white hover:text-yellow-400 focus:outline-none">latest updates</a>
+        </div>
+        <div class="flex block pro:block items-center p-4 xl:hidden">
+            <button type="button" class="text-white text-xl text-white focus:outline-none" onclick="toggleElem('sm_navi')">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+        </div>
+    </nav>
+    <nav id="sm_navi" class="hidden absolute z-50 inset-0 p-2">
+        <div class="bg-blue-900 flex flex-col w-full rounded-xl shadow-xl">
+            <div class="flex flex-row items-center justify-between w-full">
+                <img src="img/logo.png" class="h-12 md:h-16 w-auto px-2 md:px-6" alt="The Aralia">
+                <button class="text-white text-xl focus:text-blue-900 active:text-blue-900" onclick="toggleElem('sm_navi')">
+                    <i class="fa fa-times-circle"></i>
+                </button>
+            </div>
+            <div class="flex flex-col items-center justify-center w-full p-2 space-y-2 border-t-2 border-b-2 border-gray-300 border-solid">
+                <a href="index.html" class="uppercase text-sm text-white focus:text-yellow-400 active:text-yellow-400 focus:outline-none">home</a>
+                <a href="aboutus.html" class="uppercase text-sm text-white focus:text-yellow-400 active:text-yellow-400 focus:outline-none">about us</a>
+                <a class="uppercase text-sm text-yellow-400 focus:text-yellow-400 active:text-yellow-400 focus:outline-none">properties</a>
+                <a href="latest.html" class="uppercase text-sm text-white focus:text-yellow-400 active:text-yellow-400 focus:outline-none">latest updates</a>
+            </div>
+        </div>
+    </nav>
+    <!--Properties-->
+    <div class="space-y-10 xl:p-6">
+        <div class="grid md:grid-cols-4 pt-4 space-y-6">
+            <div class="md:col-span-2">
+                <img src="img/properties/alabang.jpg" class="rounded-full" alt="Alabang Buildings">
+            </div>
+            <div class="md:col-span-2 xl:pt-60 md:pl-10 ">
+                <p class="uppercase text-center md:text-left">your posh neigborhood in the south</p>
+                <p class="text-2xl font-bold text-center md:text-left"> Alabang West</p>
+                <div class="flex flex-wrap flex-row justify-center md:justify-start mt-4 gap-2">
+                    <div class="flex flex-row items-center justify-center p-2 text-white bg-cover bg-gray-400 space-x-4">
+                        <img src="img/properties/size.png" class="w-12 h-10">
+                        <p class="text-xs text-center">550 SqFt</p> 
+                    </div>
+                    <div class="flex flex-row items-center justify-center p-2 text-white bg-cover bg-gray-400 space-x-4">
+                        <img src="img/properties/bath.png" class="w-12 h-10">
+                        <p class="text-xs text-center">4 bath</p> 
+                    </div>
+                    <div class="flex flex-row items-center justify-center p-2 text-white bg-cover bg-gray-400 space-x-4">
+                        <img src="img/properties/bed.png" class="w-12 h-10">
+                        <p class="text-xs text-center">3 Bed</p> 
+                    </div>
+                    <div class="flex flex-row items-center justify-center p-2 text-white bg-cover bg-gray-400 space-x-4">
+                        <img src="img/properties/car.png" class="w-12 h-10">
+                        <p class="text-xs text-center">3 Garage</p> 
+                    </div>
+                </div>
+            </div>
+            <div class="md:col-span-4">
+                <p class="font-sans text-lg ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore    
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>  
+        </div>
+        <div class="grid md:grid-cols-4 pt-4 space-y-6">
+            <div class="md:col-span-2">
+                <img src="img/properties/pasig.jpg" class="rounded-full" alt="Alabang Buildings">
+            </div>
+            <div class="md:col-span-2 xl:pt-60 md:pl-10 ">
+                <p class="uppercase text-center md:text-left">your posh neigborhood in the south</p>
+                <p class="text-2xl font-bold text-center md:text-left">Southwoods City</p>
+                <div class="flex flex-wrap flex-row justify-center md:justify-start mt-4 gap-2">
+                    <div class="flex flex-row items-center justify-center p-2 text-white bg-cover bg-gray-400 space-x-4">
+                        <img src="img/properties/size.png" class="w-12 h-10">
+                        <p class="text-xs text-center">550 SqFt</p> 
+                    </div>
+                    <div class="flex flex-row items-center justify-center p-2 text-white bg-cover bg-gray-400 space-x-4">
+                        <img src="img/properties/bath.png" class="w-12 h-10">
+                        <p class="text-xs text-center">4 bath</p> 
+                    </div>
+                    <div class="flex flex-row items-center justify-center p-2 text-white bg-cover bg-gray-400 space-x-4">
+                        <img src="img/properties/bed.png" class="w-12 h-10">
+                        <p class="text-xs text-center">3 Bed</p> 
+                    </div>
+                    <div class="flex flex-row items-center justify-center p-2 text-white bg-cover bg-gray-400 space-x-4">
+                        <img src="img/properties/car.png" class="w-12 h-10">
+                        <p class="text-xs text-center">3 Garage</p> 
+                    </div>
+                </div>
+            </div>
+            <div class="md:col-span-4">
+                <p class="font-sans text-lg ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore    
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>  
+        </div>        
+    </div>
+    <script>
+        function toggleElem(paramID)
+            {
+                document.getElementById(paramID).classList.toggle('hidden');
+                document.getElementById(paramID).classList.toggle('block');
+            }
+    </script>
+</body>
+</html>
